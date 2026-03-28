@@ -1,10 +1,7 @@
-//core modules
-const fs=require("fs")
+const ld=require("lodash")
 
-fs.writeFile("test.txt","hello everyone this is shanmukh",(err)=>{
-    if(err){
-        console.log("error while creating file")
-    }else{
-        console.log("File Created")
-    }
-})
+const nums=[1,2,3,4,5,6,7,8,9]
+
+let rev=ld.reverse(nums)
+
+console.log(rev)

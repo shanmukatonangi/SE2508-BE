@@ -1,0 +1,37 @@
+//core modules
+const fs=require("fs")
+//create
+fs.writeFile("test.txt","hello everyone this is shanmukh",(err)=>{
+    if(err){
+        console.log("error while creating file")
+    }else{
+        console.log("File Created")
+    }
+})
+
+// maths.add(10,12)
+//read
+fs.readFile("shanmukh.txt",'utf-8',(err,data)=>{
+    if(err){
+        console.log(err)
+    }else{
+        console.log(data)
+    }
+})
+
+//update
+fs.appendFile("shanmukh.txt","/nWelcome to nodejs",(err)=>{
+if(err){
+    console.log(err)
+}else{
+    console.log("File Updated")
+}
+})
+
+fs.unlink("test.txt",(err)=>{
+    if(err){
+        console.log(err)
+    }else{
+        console.log("File Deleted")
+    }
+})

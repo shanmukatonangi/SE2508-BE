@@ -9,7 +9,7 @@ mul(10,12)
 console.log(maths)
 
 
-maths.add(10)
+maths.add(10,12)
 maths.sub(10,12)
 // maths={ 
 //     add: "ADD",
